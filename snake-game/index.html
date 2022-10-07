@@ -1,135 +1,43 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="app.js"></script> 
-        <title>Snake Game</title>
+        <script src="snake-game.js"></script>
+        <title>Snake</title>
     </head>
-
     <body>
+        <h1>Snake Clone Game</h1>
+        <div class="container">
+            <h3>Pick your Board Size</h3>
+            <span>Clear Board before choosing size</span>
+            <button class="ten">10x10</button>
+            <button class="fifteen">15x15</button>
+            <button class="twenty">20x20</button>
 
-       
- 
-<!-- 9/24 1110 initially designed as a page game, but considering a popup game board -->
-    
-    <div class="scoreDisplay"></div>
-    
-    <div class="popup"> </div>
-    <div class="button">
-        <button class="up">Up</button>
-        <button class="down">Down</button>
-        <button class="left">Left</button>
-        <button class="right">Right</button>
-        <button class="start">Start</button>
-    </div>
-    <div class="popup">
-        <button class="restart">Restart</button>
-    </div>
-    <div class="grid" >
-            <!-- <div></div> 
-            <div class="snake"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="juice"></div>     
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div> -->
         </div>
-
-</html>
+    <div class="container" id="game">
+        <div class="container" id="gameArea">
+            <div class="score">Score:<span>0</span>
+            </div>
+            <div class="gameBoard">                          
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class = "popup">
+                <div>
+                    <button class="start">Start/Restart</button>
+                    <button class="restart">Clear Board</button>
+                </div>
+                
+                    <button class="left">Left</button>
+                <div class="container" id="direction">
+                    <button class="up">Up</button>
+                    <button class="down">Down</button>
+                </div>
+                    <button class="right">Right</button>
+                
+            </div>
+        </div>
+    </body>
+</html>  
