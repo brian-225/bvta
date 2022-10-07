@@ -1,41 +1,74 @@
-body {
-    background: rgb(212, 212, 212);
+h1{
+    text-align: center;
 }
-.grid{
-    width: 200px;
-    height: 200px;
-    border: 1px red;
-    margin: 0 auto;
+body{
+    background-color: aqua;
+}
+#game{
+    display: flex;
+    justify-items: center;
+}
+#controls{
+    flex: 1 2 10vw;
+    margin-left: 80px;
+    margin-right: -80px;
+    /* border: solid 0.1px black; */
+}
+#gameArea{
+    justify-self: center;
+}
+#placeholder{
+    flex: 6 3 auto;
+
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: baseline;
+}
+.container .gameBoard{
+    align-self: center;
+}
+.gameBoard{
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
 }
-.grid div {
+.gameBoard div {
     width: 20px;
     height: 20px;
-    
+    /* border: 0.1px solid orange; */
+    box-sizing: border-box;
 }
-
 .snake{
-    background-color: rgb(165, 6, 6);
+    background-color: green;
+}
+.apple{
+    background-color: red;
+}
+h3, span{
+    text-align: center;
 }
 
-.juice{
-    background-color: darkorange;
-    border-radius: 18px;
-}
- 
+
+
 
 .popup{
-    background-color: grey;
-    width: 125px;
+    background-color:   light gray;
+    width: 200px;
     height: 100px;
-    position: fixed;
-    top: 100px;
-    left: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
- }
- /*
- .grid .squares */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.button .controls{
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+}
+.container .direction{
+    justify-content: space-evenly;
+
+}
